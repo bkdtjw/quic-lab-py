@@ -1,0 +1,32 @@
+quic-lab-py/
+├── src/
+│   └── quic_lab/
+│       ├── __init__.py
+│       ├── __main__.py          # CLI 入口
+│       ├── client/
+│       │   ├── __init__.py
+│       │   └── h3_client.py
+│       ├── server/
+│       │   ├── __init__.py
+│       │   └── h3_server.py
+│       ├── analyzer/
+│       │   ├── __init__.py
+│       │   ├── qlog_parser.py
+│       │   ├── metrics.py
+│       │   └── report.py
+│       └── experiments/
+│           ├── __init__.py
+│           ├── run_once.py
+│           ├── weak_network.py
+│           └── compare.py
+├── config/
+│   └── default.yaml
+├── certs/                        # 自签证书
+├── sample_logs/                  # 示例 qlog，纳入版本管理
+├── output/                       # 运行产物，gitignore
+├── docs/
+├── tests/
+│   └── test_qlog_parser.py
+├── pyproject.toml
+├── README.md
+└── .gitignore
